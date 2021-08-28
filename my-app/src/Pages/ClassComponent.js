@@ -17,7 +17,7 @@ export default class ClassComponent extends Component {
             this.setState({
                 date: new Date()
             })
-        })
+        }, 1000)
     }
     //unmout
     componentWillUnmount(){
@@ -29,7 +29,7 @@ export default class ClassComponent extends Component {
         return (
             <div>
                 <h3>ClassComponent</h3>
-                <p>{date.toLocaleTimeString()}</p>
+                <p>Time: {date.toLocaleTimeString()}</p>
             </div>
         )
     }
