@@ -6,7 +6,8 @@ import React from "react";
 // import SetStatePage from "./pages/SetStatePage";
 import "./index.css";
 // import ReactReduxPage from "./pages/ReactReduxPage";
-import ReactReduxPage from "./pages/ReactReduxPage";
+// import ReactReduxPage from "./pages/ReactReduxPage";
+import RouterPage from "./pages/RouterPage";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       {/* <ClassComponent></ClassComponent>
         <FunctionComponent></FunctionComponent>
         <SetStatePage></SetStatePage> */}
-      <ReactReduxPage></ReactReduxPage>
+      {/* <ReactReduxPage></ReactReduxPage> */}
       {/* <UserPage></UserPage> */}
+      <RouterPage></RouterPage>
     </div>
   );
 }

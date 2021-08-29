@@ -5,7 +5,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <Layout showTopBar={false} showBottomBar={true} title="HomePage">
+        <Layout showTopBar={false} showBottomBar={true} title="Home Page">
           {/* <div>
                     <h3>HomePage</h3>
                 </div> */}

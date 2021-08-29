@@ -5,7 +5,7 @@ export default class UserPage extends Component {
   render() {
     return (
       <div>
-        <Layout showTopBar={true} showBottomBar={true} title="User Info">
+        <Layout showTopBar={false} showBottomBar={true} title="User Info">
           <div>
             <h3>User Page</h3>
           </div>
