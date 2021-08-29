@@ -14,7 +14,7 @@ export default class LifeCyclePage extends Component {
     console.log("constructor"); //sy-log
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     console.log("componentWillMount"); //sy-log
   }
   componentDidMount() {
@@ -26,7 +26,7 @@ export default class LifeCyclePage extends Component {
 
     return count !== 3; //true
   }
-  componentWillUpdate() {
+  UNSAFE_componentWillUpdate() {
     console.log("componentWillUpdate"); //sy-log
   }
 
@@ -45,22 +45,22 @@ export default class LifeCyclePage extends Component {
         <h3>LifeCyclePage</h3>
         <p>{count}</p>
         <button onClick={this.setCount}>update count</button>
-        <Child>count={count}</Child>
-        {/* {count % 2 && <Child>count={count}</Child>} */}
+        <Child count={count}></Child>
+        {/* {count % 2 && <Child count={count}></Child>} */}
       </div>
     );
   }
 }
 
 class Child extends Component {
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     console.log("componentWillReceiveProps,", nextProps); //sy-log
   }
   componentWillUnmount() {
     console.log("componentWillUnmount"); //sy-log
   }
   render() {
-    console.log("Child render"); //sy-log
+    console.log("Child render:", this.props); //sy-log
     const { count } = this.props;
     return (
       <div>
