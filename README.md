@@ -9,3 +9,7 @@
 # npm install react-redux --save
 
 # npm install --save react-router-dom
+
+# https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+# npx react-codemod rename-unsafe-lifecycles
