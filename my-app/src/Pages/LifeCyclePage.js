@@ -14,24 +14,39 @@ export default class LifeCyclePage extends Component {
     console.log("constructor"); //sy-log
   }
 
-  UNSAFE_componentWillMount() {
-    console.log("componentWillMount"); //sy-log
-  }
+  //   UNSAFE_componentWillMount() {
+  //     console.log("componentWillMount"); //sy-log
+  //   }
   componentDidMount() {
     console.log("componentDidMount"); //sy-log
   }
+
+  static getDerivedStateFromProps(props, state) {
+    console.log("getDerivedStateFromProps,", props, state); //sy-log
+    const { count } = state;
+
+    return count > 5 ? { count: 0 } : null;
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("getSnapshotBeforeUpdate,", prevProps, prevState); //sy-log
+    return {
+      msg: "getSnapshotBeforeUpdate",
+    };
+  }
+
   shouldComponentUpdate(nextProps, nextState) {
     const { count } = nextState;
     console.log("shouldComponentUpdate:", nextState, this.state); //sy-log
 
     return count !== 3; //true
   }
-  UNSAFE_componentWillUpdate() {
-    console.log("componentWillUpdate"); //sy-log
-  }
+  //   UNSAFE_componentWillUpdate() {
+  //     console.log("componentWillUpdate"); //sy-log
+  //   }
 
-  componentDidUpdate() {
-    console.log("componentDidUpdate"); //sy-log
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log("componentDidUpdate, ", prevProps, prevState, snapshot); //sy-log
   }
 
   setCount = () => {
