@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       APP
       <Button type="primary">Click</Button>
+      <a href="google.com.au">google</a>
     </div>
   );
 }
