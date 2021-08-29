@@ -3,7 +3,8 @@ import React from "react";
 // vdom -> dom
 import ReactDOM from "react-dom";
 // import "./index.css";
-import App from './App';
+import App from "./App";
+import store from "./store";
 // import reportWebVitals from './reportWebVitals';
 // import logo from "./logo.svg";
 // import styles from './index.module.css';
@@ -36,12 +37,15 @@ import App from './App';
 // );
 
 //ReactDOM.render(jsx, document.getElementById("root"));
-
+store.subscribe(() => {
+  console.log("store changed"); //sy-log
+  ReactDOM.render(<App />, document.getElementById("root"));
+});
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

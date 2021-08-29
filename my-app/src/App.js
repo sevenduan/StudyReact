@@ -1,10 +1,11 @@
 import React from "react";
-// import ClassComponent from "./Pages/ClassComponent";
-// import FunctionComponent from "./Pages/FunctionComponent";
-import HomePage from "./Pages/HomePage";
-// import UserPage from "./Pages/UserPage";
-// import SetStatePage from "./Pages/SetStatePage";
+// import ClassComponent from "./pages/ClassComponent";
+// import FunctionComponent from "./pages/FunctionComponent";
+// import HomePage from "./pages/HomePage";
+// import UserPage from "./pages/UserPage";
+// import SetStatePage from "./pages/SetStatePage";
 import "./index.css";
+import ReduxPage from "./pages/ReduxPage";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       {/* <ClassComponent></ClassComponent>
         <FunctionComponent></FunctionComponent>
         <SetStatePage></SetStatePage> */}
-      <HomePage></HomePage>
+      <ReduxPage></ReduxPage>
       {/* <UserPage></UserPage> */}
     </div>
   );
