@@ -5,9 +5,10 @@ import React from "react";
 // import UserPage from "./pages/UserPage";
 // import SetStatePage from "./pages/SetStatePage";
 import "./index.css";
+import PureComponentPage from "./pages/PureComponentPage";
 // import ReactReduxPage from "./pages/ReactReduxPage";
 // import ReactReduxPage from "./pages/ReactReduxPage";
-import RouterPage from "./pages/RouterPage";
+// import RouterPage from "./pages/RouterPage";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <SetStatePage></SetStatePage> */}
       {/* <ReactReduxPage></ReactReduxPage> */}
       {/* <UserPage></UserPage> */}
-      <RouterPage></RouterPage>
+      <PureComponentPage></PureComponentPage>
     </div>
   );
 }
