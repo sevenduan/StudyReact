@@ -3,11 +3,10 @@ import { connect } from "react-redux";
 //imco
 
 export default connect(
-  //map state -> props
+  //mapDispatchToProps
   (state) => ({
     num: state,
   }),
-
   //map dispath - >props
   {
     add: () => {
@@ -18,15 +17,10 @@ export default connect(
     },
   }
 )(
-  //     const mapDispatchToProps = {
-  //     export default connect(
-  //         mapStateToProps, //状态映射 mapStateToProps
-  // mapDispatchToProps, //派发事件映射
-  // )(ReactReduxPage);
   class ReactReduxPage extends Component {
     render() {
       console.log("props:", this.props); //sy-log
-      const { num, dispatch, add, minus } = this.props;
+      const { num, add, minus } = this.props;
 
       return (
         <div>
