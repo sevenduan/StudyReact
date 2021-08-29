@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 // import "./index.css";
 import App from "./App";
 import store from "./store";
+import { Provider } from "react-redux";
 // import reportWebVitals from './reportWebVitals';
 // import logo from "./logo.svg";
 // import styles from './index.module.css';
@@ -37,14 +38,14 @@ import store from "./store";
 // );
 
 //ReactDOM.render(jsx, document.getElementById("root"));
-store.subscribe(() => {
-  console.log("store changed"); //sy-log
-  ReactDOM.render(<App />, document.getElementById("root"));
-});
+// store.subscribe(() => {
+//   console.log("store changed"); //sy-log
+//   ReactDOM.render(<App />, document.getElementById("root"));
+// });
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById("root")
 );
 

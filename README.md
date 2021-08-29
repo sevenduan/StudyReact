@@ -5,3 +5,5 @@
 # npx create-react-app my-app
 
 # npm install redux --save
+
+# npm install react-redux --save

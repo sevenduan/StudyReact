@@ -5,7 +5,8 @@ import React from "react";
 // import UserPage from "./pages/UserPage";
 // import SetStatePage from "./pages/SetStatePage";
 import "./index.css";
-import ReduxPage from "./pages/ReduxPage";
+// import ReactReduxPage from "./pages/ReactReduxPage";
+import ReactReduxPage from "./pages/ReactReduxPage";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       {/* <ClassComponent></ClassComponent>
         <FunctionComponent></FunctionComponent>
         <SetStatePage></SetStatePage> */}
-      <ReduxPage></ReduxPage>
+      <ReactReduxPage></ReactReduxPage>
       {/* <UserPage></UserPage> */}
     </div>
   );

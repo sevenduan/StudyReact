@@ -15,7 +15,7 @@ export default class ReduxPage extends Component {
       <div>
         <h3>ReduxPage</h3>
         <p>{store.getState()}</p>
-        <button onClick={() => store.dispatch({ type: "ADD" })}>add</button>
+        <button onClick={() => store.dispatch({ type: "ADD" })}>ADD</button>
         <button onClick={() => store.dispatch({ type: "MINUS" })}>MINUS</button>
       </div>
     );
