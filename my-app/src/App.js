@@ -5,7 +5,8 @@ import React from "react";
 // import UserPage from "./pages/UserPage";
 // import SetStatePage from "./pages/SetStatePage";
 import "./index.css";
-import UseCallbackPage from "./pages/UseCallbackPage";
+import DialogPage from "./pages/DialogPage";
+// import UseCallbackPage from "./pages/UseCallbackPage";
 // import HookPage from "./pages/HookPage";
 // import UseMemoPage from "./pages/UseMemoPage";
 // import LifeCyclePage from "./pages/LifeCyclePage";
@@ -26,7 +27,8 @@ function App() {
       {/* <LifeCyclePage></LifeCyclePage> */}
       {/* <HookPage></HookPage> */}
       {/* <UseMemoPage></UseMemoPage> */}
-      <UseCallbackPage></UseCallbackPage>
+      {/* <UseCallbackPage></UseCallbackPage> */}
+      <DialogPage></DialogPage>
     </div>
   );
 }
