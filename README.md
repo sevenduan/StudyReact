@@ -13,3 +13,5 @@
 # https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 # npx react-codemod rename-unsafe-lifecycles
+
+# npm install --save-dev @babel/plugin-proposal-decorators
