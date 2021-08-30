@@ -5,7 +5,9 @@ import React from "react";
 // import UserPage from "./pages/UserPage";
 // import SetStatePage from "./pages/SetStatePage";
 import "./index.css";
-import HookPage from "./pages/HookPage";
+import UseCallbackPage from "./pages/UseCallbackPage";
+// import HookPage from "./pages/HookPage";
+// import UseMemoPage from "./pages/UseMemoPage";
 // import LifeCyclePage from "./pages/LifeCyclePage";
 // import PureComponentPage from "./pages/PureComponentPage";
 // import ReactReduxPage from "./pages/ReactReduxPage";
@@ -22,7 +24,9 @@ function App() {
       {/* <UserPage></UserPage> */}
       {/* <PureComponentPage></PureComponentPage> */}
       {/* <LifeCyclePage></LifeCyclePage> */}
-      <HookPage></HookPage>
+      {/* <HookPage></HookPage> */}
+      {/* <UseMemoPage></UseMemoPage> */}
+      <UseCallbackPage></UseCallbackPage>
     </div>
   );
 }
